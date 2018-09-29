@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <tr>
+            <th>Item1</th>
+            <th>Item2</th>
+            <th>Item3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let customer of asyncData |async">
+            <td>{{customer.firstname}}</td>
+            <td>{{customer.lastname}}</td>
+            <td>{{customer.email}}</td>
+            <td><button (click)="removeCustomer(customer)">Delete</button></td>
+        </tr>
+    </tbody>
+
+</table>

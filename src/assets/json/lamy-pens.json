@@ -1,0 +1,118 @@
+{
+  "lamy-list": [
+    {
+      "id": 1,
+      "name": "Petrol Blue",
+      "description" : "Mystery look fountain pen",
+      "color": "Dark Blue Green",
+      "colorGroup": "Blue",
+      "price": 950,
+      "limited": true,
+      "year": 2017,
+      "material": "plastics"
+    },
+    {
+      "id": 2,
+      "name": "Brown Line and Friends",
+      "description" : "Matted Brown Fountain Pen with EF nib",
+      "color": "Brown",
+      "colorGroup": "Brown",
+      "price": 1900,
+      "limited": true,
+      "year": 2010,
+      "material": "Plastics"
+    },
+     {
+      "id": 3,
+      "name": "Charged Green",
+      "description" : "Light Yellow Green Pen that make yours day be alert",
+      "color": "Light Yellow Green",
+      "colorGroup": "Green",
+      "price": 1200,
+      "limited": true,
+      "year": 2016,
+      "material": "Aluminium"
+    },
+    {
+      "id": 4,
+      "name": "All Black",
+      "description" : "Very black matte Pen, Batman style",
+      "color": "Very Black",
+      "colorGroup": "Black",
+      "price": 750,
+      "limited": true,
+      "year": 2018,
+      "material": "Plastics"
+    },
+    {
+      "id": 5,
+      "name": "Black Purple",
+      "description" : "Metalic Dark Purple",
+      "color": "Dark Purple",
+      "colorGroup": "Purple",
+      "price": 1100,
+      "limited": true,
+      "year": 2016,
+      "material": "Aluminium"
+    },
+    {
+      "id": 6,
+      "name": "Vibrant Pink",
+      "description" : "Light Pink Pen that make yours day be inspired",
+      "color": "Flash Pink",
+      "colorGroup": "Pink",
+      "price": 1100,
+      "limited": true,
+      "year": 2016,
+      "material": "Aluminium"
+    },
+    {
+      "id": 7,
+      "name": "Dark Lilac",
+      "description" : "Matte Dark Violet Fountain Pen, Feel like you are in Forget Me Not field",
+      "color": "Dark Violet",
+      "colorGroup": "Violet",
+      "price": 1200,
+      "limited": true,
+      "year": 2017,
+      "material": "Plastics"
+    },
+    {
+      "id": 8,
+      "name": "Al Star Blue Green",
+      "description" : "Blue Green",
+      "color": "Bluegreen metallic anodized",
+      "colorGroup": "Green",
+      "price": 1100,
+      "limited": true,
+      "year": 2017,
+      "material": "Aluminium"
+    },
+    {
+      "id": 9,
+      "name": "Al Star Pacific Blue",
+      "description" : "Pacific Blue, Live from deep ocean",
+      "color": "Pacific Green",
+      "colorGroup": "Blue",
+      "price": 1100,
+      "limited": true,
+      "year": 2017,
+      "material": "Aluminium"
+    },
+    {
+      "id": 10,
+      "name": "Al Star Orange",
+      "description" : "Sweet like an orange",
+      "color": "Copper Orange",
+      "colorGroup": "Orange",
+      "price": 3300,
+      "limited": true,
+      "year": 2015,
+      "material": "Aluminium"
+    }
+
+
+
+    
+  ]
+}

@@ -1,0 +1,38 @@
+
+<div class="mat-elevation-z8" align='center'>
+  
+<img src='../../assets/image/{{selectedId}}.jpg'  height="200" />
+
+
+  <mat-form-field>
+    <input matInput  (keyup)="applyFilter($event.target.value)" placeholder="Filter your style, type name, color or model you are looking for">
+  </mat-form-field>
+  <mat-table #table [dataSource]="dataSource" matSort>
+    <ng-container matColumnDef="model">
+          <mat-header-cell *matHeaderCellDef mat-sort-header>Model </mat-header-cell>
+          <mat-cell *matCellDef="let lamy"> {{lamy.model}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="name">
+            <mat-header-cell *matHeaderCellDef mat-sort-header  > Name </mat-header-cell>
+            <mat-cell *matCellDef="let lamy"> {{lamy.name}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="color">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>Color </mat-header-cell>
+            <mat-cell *matCellDef="let lamy"> {{lamy.color}} </mat-cell>
+    </ng-container>
+    
+
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"
+    [ngStyle]="{backgroundColor: row.id==selectedId? 'lightgrey':''}"
+     (mouseover)=onClickRow(row.description,row.id) (click)=onClickRow(row.description,row.id)></mat-row>
+
+  
+</mat-table>
+
+
+  <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+</div>

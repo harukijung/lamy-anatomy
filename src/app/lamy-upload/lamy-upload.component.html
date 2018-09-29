@@ -1,0 +1,76 @@
+
+<h4>
+  <table>
+  <tr>
+  <tr>
+  <tr>
+      <font color={{typedBody}}>
+    <td>
+      Lamy Language : nib=[nib value],body=[color],clip= color]
+    </td> 
+  </font>
+  </tr>
+  <tr>
+  <font color={{typedBody}}>
+    <td>
+      Example : nib=M,body=black,clip=red
+  </td>
+  </font>
+  </tr>
+</table>
+</h4>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label>
+            <h3> <font color={{typedBody}}>  Type Your Lamy Language </font></h3>
+            <input type="text" [formControl]="lamyTxt" (keyup)=readText() size=40 font-size=20 >
+        </label>
+        <button type="button" class="btn btn-sm btn-default" (click)=clearText()>Clear</button>
+      <!--  <button type="button" class="btn btn-sm btn-default" (click)=readText()>Translate</button>
+     
+        <br>
+        <br>
+        <br>
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name"  formControlName="name">
+       -->
+    </div>
+   
+   
+   <!-- <div class="form-group">
+      <label for="avatar">Avatar</label>
+      <input type="file" id="avatar" (change)="onFileChange($event)" #fileInput>
+      <button type="button" class="btn btn-sm btn-default" (click)="clearFile()">clear file</button>
+    </div>
+    <button type="submit" [disabled]="form.invalid || loading" class="btn btn-success">Submit <i class="fa fa-spinner fa-spin fa-fw" *ngIf="loading"></i></button>
+  -->
+  </form>
+  
+<table>
+  <tr>
+    <td>
+      <img src='../../assets/image/nib/{{typedNib}}.jpg'  />
+    </td>
+       
+  </tr>
+  <tr>
+      <td colspan="2">
+           <img src='../../assets/image/body/{{typedBody}}.jpg'  />
+   
+      </td>
+  </tr>
+  <tr>
+  <td>
+      <font color={{typedClip}} size=72 valign='top'>   With {{typedClip}} clip </font> 
+  </td>
+    </tr>
+  <tr>
+      <td  colspan="2">
+          <img src='../../assets/image/full/{{typedClip}}_{{typedBody}}.jpg' height="250" />
+         
+      </td>
+  </tr>
+</table>
+
+

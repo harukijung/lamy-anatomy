@@ -1,0 +1,22 @@
+<!-- MENU
+-->
+<div align="left" valign="top">
+<button mat-raised-button color="grey" [matMenuTriggerFor]="appMenu">Menu</button>
+<mat-menu #appMenu="matMenu">
+  <button mat-menu-item [routerLink]="['/']">Home</button>
+  <button mat-menu-item [routerLink]="['/paging']">Lamy Paging</button>
+  <button mat-menu-item [routerLink]="['/alstarShade']">Twenty Two Shades of Al-star</button> 
+ <!-- <button mat-menu-item [routerLink]="['/lamyList']">Lamy List</button> -->
+ <button mat-menu-item [routerLink]="['/lamyUpload']"> Lamy by Your Type </button>
+  <!-- <button mat-menu-item [routerLink]="['/customLamy']"> Custom Lamy </button>
+  <button mat-menu-item [routerLink]="['/form']"> Lamy Dashboard</button>-->
+  <button mat-menu-item [routerLink]="['/credit']"> Credit & Contact </button>
+</mat-menu>
+</div>
+
+
+<!-- MAIN DISPLAY
+-->
+
+<router-outlet></router-outlet>
+

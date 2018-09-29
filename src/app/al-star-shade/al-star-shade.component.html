@@ -1,0 +1,31 @@
+<div align=center>
+    <br>
+<h3>Amazing Artwork Created Using Lamy Fountain Pens</h3>
+<h3>Click on your shade and enjoy seeing 22 artworks</h3>
+
+<img src="../assets/image/al-star-shade/shade_{{selectedShade}}.jpg" height="250"/>
+<br>
+Artwork By
+<a href='{{selectedUrl}}' target="_blank" >{{selectedCredit}}</a>
+<br>
+<br>
+<table>
+    <tr>
+        <td *ngFor="let art of artworkList" [ngStyle]="{backgroundColor: art.id==selectedShade? 'lightgrey':'grey'}">
+            <img src="../assets/image/al-star-shade/{{art.id}}.jpg"
+            (mouseover)=selectShade([art.id],[art.credit],[art.url]);
+            (click)=selectShade([art.id],[art.credit],[art.url])
+           
+             height="150"/>
+        </td>
+</tr>
+</table>
+</div>
+
+<!--<img src="../assets/image/al-star-shade/2.png"/>
+<img src="../assets/image/al-star-shade/3.png"/>
+<img src="../assets/image/al-star-shade/4.png"/>
+<img src="../assets/image/al-star-shade/5.png"/>
+<img src="../assets/image/al-star-shade/6.png"/>
+<img src="../assets/image/al-star-shade/7.png"/>
+<img src="../assets/image/al-star-shade/8.png"/>-->

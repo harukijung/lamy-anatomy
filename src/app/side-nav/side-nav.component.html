@@ -1,0 +1,15 @@
+<mat-sidenav-container class="example-container" 
+*ngIf="shouldRun">
+  <mat-sidenav opened mode="side">
+    <app-route></app-route>
+  
+  </mat-sidenav>
+  <mat-sidenav opened mode="side" position="end">
+ 
+  </mat-sidenav>
+  <div align="center">
+  <app-main></app-main>
+    </div>
+
+</mat-sidenav-container>
+

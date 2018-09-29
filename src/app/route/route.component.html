@@ -1,0 +1,25 @@
+<ul>
+      <li>
+        <a  [routerLink]="['/']">Home</a>
+      </li>
+      <li>
+        <a  [routerLink]="['/paging']">Lamy Paging</a>
+      </li>
+      <li>
+        <a  [routerLink]="['/lamyList']">Lamy List</a>
+      </li>
+      <li>
+        <a  [routerLink]="['/customLamy']">Custom Lamy</a>
+      </li>
+      <li>
+        <a  [routerLink]="['/lamyUpload']">Lamy Upload</a>
+      </li>
+      <button mat-raised-button color="grey" [matMenuTriggerFor]="appMenu">Menu</button>
+      <mat-menu #appMenu="matMenu">
+        <button mat-menu-item [routerLink]="['/paging']">Lamy Paging</button>
+        <button mat-menu-item [routerLink]="['/lamyList']">Lamy List</button>
+        <button mat-menu-item [routerLink]="['/customLamy']"> Custom Lamy </button>
+        <button mat-menu-item [routerLink]="['/lamyUpload']"> Lamy Upload </button>
+      
+    </mat-menu>
+</ul>

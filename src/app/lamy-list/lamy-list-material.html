@@ -1,0 +1,40 @@
+<div><h2>{{displayDesc}}</h2></div>
+<img src='../../assets/image/{{selectedId}}.jpg' width="400px" height="220px"/>
+<div class="example-container mat-elevation-z8">
+  
+    <mat-table #table [dataSource]="dataSource">
+            <ng-container matColumnDef="name">
+                    <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+                    <mat-cell *matCellDef="let lamy"> {{lamy.name}} </mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="color">
+                    <mat-header-cell *matHeaderCellDef> Color </mat-header-cell>
+                    <mat-cell *matCellDef="let lamy"> {{lamy.color}} </mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="price">
+                    <mat-header-cell *matHeaderCellDef>Price </mat-header-cell>
+                    <mat-cell *matCellDef="let lamy"> {{lamy.price}} </mat-cell>
+            </ng-container>
+           
+         <!--   <ng-container matColumnDef="id">
+                <mat-header-cell *matHeaderCellDef>Image </mat-header-cell>
+                <mat-cell *matCellDef="let lamy"> <img src='../../assets/image/{{lamy.id}}.jpg' width="200px" height="120px"/> </mat-cell>
+        </ng-container>
+-->
+
+
+            <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+            <mat-row *matRowDef="let row; columns: displayedColumns;" (mouseover)=onClickRow(row.description,row.id) (click)=onClickRow(row.description,row.id)></mat-row>
+
+          
+    </mat-table>
+    <mat-paginator [length]="totalPen" [pageSize]="5"
+                   [pageSizeOptions]="[5,10]"></mat-paginator>
+</div>
+<br>
+<br>
+<br>
+<br>
+

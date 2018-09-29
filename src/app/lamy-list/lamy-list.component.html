@@ -1,0 +1,19 @@
+<table>
+  <thead>
+      <tr>
+          <th>Name</th>
+          <th>Color</th>
+          <th>Price</th>
+          <th>Image</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let lamy of asyncLamyList |async">
+          <td>{{lamy.name}}</td>
+          <td>{{lamy.color}}</td>
+          <td>{{lamy.price}}</td>
+          <td><img src='../../assets/image/{{lamy.id}}.jpg' width="400px" height="120px"/> </td>
+      </tr>
+  </tbody>
+
+</table>

@@ -1,0 +1,23 @@
+<table>
+    <thead>
+        <tr>
+            <th>Item1</th>
+            <th>Item2</th>
+            <th>Item3</th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr *ngFor="let mainItem of asyncData |async">
+                    <td>
+                      {{mainItem.label}}
+                      {{mainItem.submenu.label}}
+
+                    </td>
+                   
+                   
+                </tr>
+    </tbody>
+
+</table>
+
+

@@ -1,0 +1,10 @@
+a:link{
+    color:dimgray;
+}
+
+a:visited{
+    color:lightslategray;
+}
+a:hover{
+    color:deeppink;
+}
